@@ -42,9 +42,9 @@ triangle_1_L.addEventListener("click",function(){
     {
         model_a=0;
     }
-    // article_2_img_video.style.opacity=0;
-    article_2_img_video.style.backgroundImage="url(" + model_1[model_a]+")";
-    // article_2_img_video.style.opacity=1;
+    article_2_img_video.style.opacity=0;
+    article_2_img_video.style.backgroundImage="url('" + model_1[model_a]+"')";
+    article_2_img_video.style.opacity=1;
 });
 
 
@@ -59,7 +59,7 @@ triangle_1_R.addEventListener("click",function(){
         model_a=model_1.length-1;
     }
     article_2_img_video.style.opacity=0;
-    article_2_img_video.style.backgroundImage="url(" + model_1[model_a]+")";
+    article_2_img_video.style.backgroundImage="url('" + model_1[model_a]+"')";
     article_2_img_video.style.opacity=1;
 });
 
@@ -75,7 +75,7 @@ triangle_2_L.addEventListener("click",function(){
         model_b=0;
     }
     article_2_img_paint.style.opacity=0;
-    article_2_img_paint.style.backgroundImage="url(" + model_2[model_b]+")";
+    article_2_img_paint.style.backgroundImage="url('" + model_2[model_b]+"')";
     article_2_img_paint.style.opacity=1;
 });
 
@@ -89,7 +89,7 @@ triangle_2_R.addEventListener("click",function(){
         model_b=model_2.length-1;
     }
     article_2_img_paint.style.opacity=0;
-    article_2_img_paint.style.backgroundImage="url(" + model_2[model_b]+")";
+    article_2_img_paint.style.backgroundImage="url('" + model_2[model_b]+"')";
     article_2_img_paint.style.opacity=1;
 });
 
@@ -104,7 +104,7 @@ triangle_3_L.addEventListener("click",function(){
         model_c=0;
     }
     article_2_img_model.style.opacity=0;
-    article_2_img_model.style.backgroundImage="url(" + model_3[model_c]+")";
+    article_2_img_model.style.backgroundImage="url('" + model_3[model_c]+"')";
     article_2_img_model.style.opacity=1;
 });
 
@@ -118,6 +118,6 @@ triangle_3_R.addEventListener("click",function(){
         model_c=model_3.length-1;
     }
     article_2_img_model.style.opacity=0;
-    article_2_img_model.style.backgroundImage="url(" + model_3[model_c]+")";
+    article_2_img_model.style.backgroundImage="url('" + model_3[model_c]+"')";
     article_2_img_model.style.opacity=1;
 });
