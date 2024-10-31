@@ -42,9 +42,9 @@ triangle_1_L.addEventListener("click",function(){
     {
         model_a=0;
     }
-    article_2_img_video.style.opacity=0;
+    // article_2_img_video.style.opacity=0;
     article_2_img_video.style.backgroundImage="url(" + model_1[model_a]+")";
-    article_2_img_video.style.opacity=1;
+    // article_2_img_video.style.opacity=1;
 });
 
 
