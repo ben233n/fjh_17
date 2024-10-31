@@ -24,14 +24,14 @@ let triangle_3_R =document.getElementById("triangle_3_R"); //第三個左邊的�
 
 
 // 第三個容器的幻燈片
-let model_1=["../img/如果發生火燒厝.jpg","../img/紙籃球.jpg","../img/數學課.jpg","../img/拾荒.jpg",];
+let model_1=["../img/如果發生火燒厝.jpg","../img/紙籃球.jpg","../img/數學課.jpg","../img/拾荒.jpg"];
 let model_a=0;
 let model_2=["../img/繪畫作品圖.png","../img/沅錡寬.png"];
 let model_b=0;
 let model_3=["../img/阿尼亞.gif","../img/有馬加奈.gif"];
 let model_c=0;
 
-
+const transitionTime = 10;
 // 下面是第一個容器的三角形
 triangle_1_L.addEventListener("click",function(){
     if(model_a< model_1.length-1)
@@ -42,9 +42,11 @@ triangle_1_L.addEventListener("click",function(){
     {
         model_a=0;
     }
-    article_2_img_video.style.opacity=0;
-    article_2_img_video.style.backgroundImage="url('" + model_1[model_a]+"')";
-    article_2_img_video.style.opacity=1;
+    article_2_img_video.style.opacity=0.7;
+    setTimeout(() => {
+        article_2_img_video.style.backgroundImage = "url('" + model_1[model_a] + "')";
+        article_2_img_video.style.opacity = 1;
+    }, transitionTime);
 });
 
 
@@ -59,8 +61,10 @@ triangle_1_R.addEventListener("click",function(){
         model_a=model_1.length-1;
     }
     article_2_img_video.style.opacity=0;
-    article_2_img_video.style.backgroundImage="url('" + model_1[model_a]+"')";
-    article_2_img_video.style.opacity=1;
+    setTimeout(() => {
+        article_2_img_video.style.backgroundImage = "url('" + model_1[model_a] + "')";
+        article_2_img_video.style.opacity = 1;
+    }, transitionTime);
 });
 
 
@@ -75,8 +79,10 @@ triangle_2_L.addEventListener("click",function(){
         model_b=0;
     }
     article_2_img_paint.style.opacity=0;
-    article_2_img_paint.style.backgroundImage="url('" + model_2[model_b]+"')";
-    article_2_img_paint.style.opacity=1;
+    setTimeout(() => {
+        article_2_img_paint.style.backgroundImage = "url('" + model_2[model_b] + "')";
+        article_2_img_paint.style.opacity = 1;
+    }, transitionTime);
 });
 
 triangle_2_R.addEventListener("click",function(){
@@ -89,8 +95,10 @@ triangle_2_R.addEventListener("click",function(){
         model_b=model_2.length-1;
     }
     article_2_img_paint.style.opacity=0;
-    article_2_img_paint.style.backgroundImage="url('" + model_2[model_b]+"')";
-    article_2_img_paint.style.opacity=1;
+    setTimeout(() => {
+        article_2_img_paint.style.backgroundImage = "url('" + model_2[model_b] + "')";
+        article_2_img_paint.style.opacity = 1;
+    }, transitionTime);
 });
 
 // 下面是第三個容器的三角形
@@ -104,8 +112,10 @@ triangle_3_L.addEventListener("click",function(){
         model_c=0;
     }
     article_2_img_model.style.opacity=0;
-    article_2_img_model.style.backgroundImage="url('" + model_3[model_c]+"')";
-    article_2_img_model.style.opacity=1;
+    setTimeout(() => {
+        article_2_img_model.style.backgroundImage = "url('" + model_3[model_c] + "')";
+        article_2_img_model.style.opacity = 1;
+    }, transitionTime);
 });
 
 triangle_3_R.addEventListener("click",function(){
@@ -118,6 +128,9 @@ triangle_3_R.addEventListener("click",function(){
         model_c=model_3.length-1;
     }
     article_2_img_model.style.opacity=0;
-    article_2_img_model.style.backgroundImage="url('" + model_3[model_c]+"')";
-    article_2_img_model.style.opacity=1;
+    setTimeout(() => {
+        article_2_img_model.style.backgroundImage = "url('" + model_3[model_c] + "')";
+        article_2_img_model.style.opacity = 1;
+    }, transitionTime);
 });
+
